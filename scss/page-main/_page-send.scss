@@ -1,0 +1,68 @@
+.page__send {
+    padding-top: 50px;
+    padding-bottom: 70px;
+    background-color: #F8E2CD;
+    @media (min-width: 767.98px){
+        padding-top: 70px;
+        padding-bottom: 90px;
+    }
+    @media (min-width: 991.98px){
+        padding-top: 100px;
+        padding-bottom: 130px;
+    }
+}
+.send__body {
+    @media (min-width: 991.98px){
+        display: flex;
+        align-items: center;
+        gap: 100px;
+    }
+}
+// .send__form {
+// }
+// .send__title {
+// }
+.send__field {
+    .form__input {
+        width: 100%;
+    }
+    &:not(:last-child){
+        margin-bottom: 35px;
+    }
+}
+.form__textarea {
+    min-width: 100%;
+    height: 89px;
+    resize: none;
+    padding: 14px 0px;
+    background-color: #F8E2CD;
+    border-bottom: 1px solid #37322F;
+}
+.send__btn {
+    min-width: 100%;
+    @media (min-width: 991.98px){
+        min-width: max-content;
+    }
+}
+.send__img {
+    @media (max-width: 991.98px){
+        display: none;
+    }
+    position: relative;
+    // padding-bottom: 80%;
+    .tangosend{
+        max-width: 100%;
+        // position: absolute;
+        // width: 100%;
+        // height: 100%;
+        // top: 0;
+        // left: 0;
+        // object-fit: cover;
+    }
+    .label{
+        max-width: 100%;
+        position: absolute;
+        top: -10%;
+        right: 0;
+    }
+}

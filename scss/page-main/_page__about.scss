@@ -1,0 +1,95 @@
+.page__about {
+    position: relative;
+    background-color: #fff;
+    &::after{
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        background-color: #f8e2cd;
+    }
+}
+.about__body {
+    position: relative;
+    z-index: 55;
+    display: grid;
+    @media (max-width: 767.98px){
+        grid-template-rows: 1fr, 1fr;
+
+    }
+    @media (min-width: 767.98px){
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+.about__img {
+    // img{
+    //     max-width: 100%;
+    // }
+    position: relative;
+    padding-bottom: 80%;
+
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
+}
+.about__content {
+    padding: 25px 17px 17px 15px;
+    background-color: #F6EFE8;
+    @media (max-width: 767.98px){
+        grid-row-start: 1;
+    }
+    @media (min-width: 767.98px){
+        padding: 50px 35px 24px 38px;
+    }
+    @media (min-width: 991.98px){
+        padding: 100px 65px 34px 68px;
+    }
+}
+// .about__title {
+// }
+.about__text {
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    color: #37322F;
+    &:not(:last-child){
+        margin-bottom: 20px;
+    }
+    @media (min-width: 767.98px){
+        &:not(:last-child){
+            margin-bottom: 35px;
+        }
+    }
+    .tanja__mail{
+        text-decoration: underline;
+    }
+}
+.about__btn {
+    min-width: 100%;
+    &:not(:last-child){
+        margin-bottom: 27px;
+    }
+    @media (min-width: 767.98px){
+        max-width: max-content;
+        margin-bottom: 75px;
+    }
+}
+.about__social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (min-width: 767.98px){
+        gap: 20px;
+        justify-content: stretch;
+    }
+}
+// .about__link {
+// }

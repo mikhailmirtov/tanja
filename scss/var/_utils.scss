@@ -1,0 +1,64 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+    display: block;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+button {
+    cursor: pointer;
+    color: inherit;
+    background-color: inherit;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+html,
+body {
+    height: 100%;
+    line-height: 1.5;
+    font-size: 16px;
+    background-color: #fff;
+    font-weight: 300;
+    font-family: Inter Tight;
+    scroll-behavior: smooth;
+}
